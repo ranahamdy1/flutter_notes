@@ -3,5 +3,6 @@ add in pubspec.yaml:
 2-  flutter_bloc: ^8.1.6
 
 and add in main:
+   WidgetsFlutterBinding.ensureInitialized();
 >> Bloc.observer = const SimpleBlocObserver();
 

@@ -1,0 +1,8 @@
+add in pubspec.yaml:
+1- dio: ^5.7.0
+2- pretty_dio_logger: ^1.4.0
+3- shared_preferences: ^2.3.2
+
+add in main:
+  await CacheHelper.init();
+  await DioHelper.init();
