@@ -15,3 +15,14 @@ EX:
 - height: MediaQuery.of(context).size.height * .25,
 - var width = MediaQuery.of(context).size.width;
 
+## scroll
+```
+  return const CustomScrollView(
+      slivers: [
+        SliverFillRemaining(
+          child: ,
+        ),
+      ],
+    );
+  ```
+- like => SingleChildScrollView
