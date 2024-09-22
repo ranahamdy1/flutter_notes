@@ -11,4 +11,7 @@ theme: ThemeData.dark().copyWith(
 ```
 
 ## Edit Size:
-- EX: height: MediaQuery.of(context).size.height * .25,
+EX:
+- height: MediaQuery.of(context).size.height * .25,
+- var width = MediaQuery.of(context).size.width;
+
