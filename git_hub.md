@@ -61,7 +61,7 @@ OR
 4- push
 ```
 
-### Connect mobile as emmeletor with wifi in android studio
+### Connect mobile as emulator with wifi in android studio
 ```
 adb tcpip 5555
 
