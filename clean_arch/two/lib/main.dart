@@ -75,6 +75,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
-// api test
-//https://api.openweathermap.org/data/2.5/weather?q=egypt&appid=1439bfeae757d3282d39eaf93852e8a9
