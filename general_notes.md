@@ -26,3 +26,12 @@ EX:
     );
   ```
 - like => SingleChildScrollView
+
+### for font:
+add in pubspec.yaml:
+```
+fonts:
+- family: GT Sectra Fine
+fonts:
+- asset: assets/fonts/GT Sectra Fine Regular.ttf
+```
