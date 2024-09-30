@@ -6,7 +6,7 @@ git add .
 
 git remote add origin https://github.com/ranahamdy1/paymob_api.git
 
-git commit -m "App Architecture & Welcome Screens"
+git commit -m "App Architecture"
 
 git push -u origin main
 ```
