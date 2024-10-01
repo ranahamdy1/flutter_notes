@@ -12,7 +12,7 @@
 > then data layer
 - 1- first models >> extent it from entity
 - 2- datam source >> remote(dio) & local(hive) for ex
-- 3- repository >>
+- 3- repository >> refrence from data source
 > then presentation layer
 - 1- controller(cubit)
 - 2- screens
