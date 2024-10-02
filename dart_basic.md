@@ -38,6 +38,15 @@ z = "aa"; //true string
 const => compile time بيتنفذ لحظه كتابه الكود فى ال
 final => run time فى ال run بيتنفذ لما اعمل
 ```
+final:
+- بمكن تعيين قيمة المتغير في وقت التشغيل (run time).
+- القيمة تُحدد عند إنشاء الكائن.
+- لا يمكن إعادة تعيين المتغير بعد تعيينه لأول مرة.
+
+
+const:
+- تُستخدم لتعريف القيم الثابتة التي تُعرف في وقت الترجمة (compile-time).
+- يمكن استخدام const لإنشاء كائنات غير قابلة للتغيير بالكامل.
 
 ## ✨ Parameters types
 - 1- Optional Parameters ==>>> square brackets [ ]
@@ -69,3 +78,21 @@ void main(){
   name('aa',y: "aa"); //output = aa
 }
 ```
+## ✨ Overloading
+  
+many functions in one class with the same name but with different function signatures 
+
+
+موافقين ف الاسم ومختلفين ف ال signature
+
+Signature 
+- 1- name
+- 2-num of parameters 
+- 3-order of them 
+- 4-type of Parameter
+
+## ✨ Static 
+- له نسخه او قيمه واحده علي كل البرنامج
+- بنادى عليه من اسم الكلاس
+
+يعنى ل عاوزه اعرف عدد الطلاب هعمل variable static
