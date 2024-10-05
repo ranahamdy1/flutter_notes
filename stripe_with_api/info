@@ -1,0 +1,3 @@
+add in pubspec.yaml:
+1- flutter_stripe:
+2- dio:
