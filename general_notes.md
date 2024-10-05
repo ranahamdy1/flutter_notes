@@ -35,3 +35,10 @@ fonts:
 fonts:
 - asset: assets/fonts/GT Sectra Fine Regular.ttf
 ```
+### Navigation
+```
+Navigator.push (
+    context,
+    MaterialPageRoute(builder: (context) => SecondRoute()),
+);
+```
