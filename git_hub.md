@@ -72,3 +72,8 @@ adb connect IP_address
 ```
 flutter packages pub run build_runner build
 ```
+
+### Commit for apk
+```
+flutter build apk --release
+```
