@@ -11,7 +11,7 @@
 - 3- third use_case >> باخذ ريفرنس من الريبو وانفذ بقي الداله ال في الريبو هنا
 > then data layer
 - 1- first models >> extent it from entity
-- 2- datam source >> remote(dio) & local(hive) for ex
+- 2- data source >> remote(dio) & local(hive) for ex
 - 3- repository >> refrence from data source
 > then presentation layer
 - 1- controller(cubit)
