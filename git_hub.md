@@ -77,3 +77,8 @@ flutter packages pub run build_runner build
 ```
 flutter build apk --release
 ```
+
+### Commit for editing network in manifest file for apk 
+```
+<uses-permission android:name="android.permission.INTERNET" />
+```
