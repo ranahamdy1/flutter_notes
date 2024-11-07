@@ -42,3 +42,22 @@ Navigator.push (
     MaterialPageRoute(builder: (context) => SecondRoute()),
 );
 ```
+### Arabic App
+```
+MaterialApp(
+      debugShowCheckedModeBanner: false,
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        Locale('ar', ''),
+        Locale('en', ''),
+      ],
+      locale: Locale('ar', ''),
+      home: SplashScreen(),
+    );
+
+and add flutter_localization in pubspec.yaml
+```
