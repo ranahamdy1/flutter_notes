@@ -63,9 +63,13 @@ OR
 
 ### Connect mobile as emulator with wifi in android studio
 ```
+Connect your Android device to your computer via a USB cable.
+
 adb tcpip 5555
 
 adb connect IP_address
+
+Now that your device is connected via Wi-Fi, you can disconnect the USB cable and in Android Studio, select your device from the available options and run the app.
 ```
 
 ### Commit for build_runner
