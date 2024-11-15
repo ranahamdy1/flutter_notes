@@ -8,3 +8,15 @@
 ### 3 - pusher
 - هو خدمة سحابية تسهل استخدام WebSocket بواجهة بسيطة
 - تستخدم بروتوكول WebSocket
+
+
+## UDP and TCP Protocol
+### 1- UDP(User Datagram Protocol): أسرع في نقل البيانات، ولكنه قد يفقد بعض الحزم دون تأكيد
+### 2- TCP(Transmission Control Protocol): يوفر نقل بيانات موثوق ومتتابع، لكنه أبطأ (EX: WebSocket)
+
+
+
+
+
+
+
