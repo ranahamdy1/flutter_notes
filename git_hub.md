@@ -86,3 +86,17 @@ flutter build apk --release
 ```
 <uses-permission android:name="android.permission.INTERNET" />
 ```
+### Add Branches
+```
+git branch Rana
+git branch
+git checkout Rana
+git commit -m "first"
+git push origin Rana
+
+// to add
+
+git add.
+git commit -m "testing"
+git push origin testing
+```
