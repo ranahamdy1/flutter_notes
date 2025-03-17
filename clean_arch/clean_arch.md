@@ -12,7 +12,7 @@
 > then data layer
 - 1- first models >> make all model here and extent it from entity
 - 2- data source >> remote(dio) & local(hive) for ex
-- 3- repository >> make implement to repo that from domain layer
+- 3- repository >> make implement to repo that from domain layer and take refrence from data source
 > then presentation layer
 - 1- controller(cubit)
 - 2- screens
