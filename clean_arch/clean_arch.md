@@ -7,12 +7,12 @@
 (controller - screens)
 > start with domain layer
 - 1- first entities >> only data that i need بعمل فيها ال انا بستخدمه بس من الريسبونس
-- 2- second repository >> بعمل فيها الداله ال انا عايزه انفذها
-- 3- third use_case >> باخذ ريفرنس من الريبو وانفذ بقي الداله ال في الريبو هنا
+- 2- second repository >> (فيها اكتر من داله) بعمل فيها الداله ال انا عايزه انفذها
+- 3- third use_case >>(عباره عن داله واحده بس) باخذ ريفرنس من الريبو وانفذ بقي الداله ال في الريبو هنا
 > then data layer
-- 1- first models >> extent it from entity
+- 1- first models >> make all model here and extent it from entity
 - 2- data source >> remote(dio) & local(hive) for ex
-- 3- repository >> refrence from data source
+- 3- repository >> make implement to repo that from domain layer
 > then presentation layer
 - 1- controller(cubit)
 - 2- screens
