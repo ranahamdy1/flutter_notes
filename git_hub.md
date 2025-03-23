@@ -91,6 +91,7 @@ flutter build apk --release
 git branch Rana
 git branch
 git checkout Rana
+git add *
 git commit -m "first"
 git push origin Rana
 
