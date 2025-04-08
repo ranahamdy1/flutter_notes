@@ -97,7 +97,13 @@ git push origin Rana
 
 // to add
 
-git add.
+git add *
 git commit -m "testing"
 git push origin testing
+
+// to pull
+
+git add *
+git commit -m "pull"
+git pull origin main
 ```
