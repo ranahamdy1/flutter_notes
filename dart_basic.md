@@ -96,3 +96,20 @@ Signature
 - بنادى عليه من اسم الكلاس
 
 يعنى ل عاوزه اعرف عدد الطلاب هعمل variable static
+## ✨ nullable vs non-nullable
+- علامة الاستفهام ? معناها: "المتغير ده ممكن يكون null أو فيه قيمة".
+- علامة ! معناها: "أنا متأكد 100% إن القيمة مش null" حتى لو كانت القيمة أصلًا nullable
+```
+class User {
+  String name;       // non-nullable
+  String? email;     // nullable
+
+  User(this.name);   // لازم تبعت name وقت الإنشاء
+}
+
+void main() {
+  User user = User("Omar");
+  print(user.name);       // ✅ "Omar"
+  print(user.email);      // ✅ null (مافيهاش قيمة لسه)
+}
+```
