@@ -21,3 +21,45 @@
 - 1- تحسين الأداء: تحميل البيانات على دفعات يقلل من استهلاك الذاكرة.
 - 2- توفير البيانات بسرعة: بدلاً من انتظار تحميل جميع البيانات، يمكن عرض البيانات الأولية سريعًا ثم جلب المزيد لاحقًا.
 - 3- توفير استهلاك الإنترنت: تقليل كمية البيانات المنقولة في كل مرة.
+> ## 📌Anonymous Class
+- هو نوع خاص من Inner Class.
+- ليس له اسم.
+- يتم تعريفه وإنشاء كائن منه في نفس الوقت.
+- غالبًا يُستخدم لتنفيذ interface أو كلاس مجرد
+  
+EX:
+
+```
+interface Greeting {
+    void sayHello();
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Greeting greeting = new Greeting() {
+            @Override
+            public void sayHello() {
+                System.out.println("Hello from anonymous class!");
+            }
+        };
+
+        greeting.sayHello();
+    }
+}
+```
+- 🔁 لو حبينا نكتب نفس الكود بكلاس "عادي" له اسم، كان هيكون كده:
+```
+class GreetingImpl implements Greeting {
+    @Override
+    public void sayHello() {
+        System.out.println("Hello from named class!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Greeting greeting = new GreetingImpl();
+        greeting.sayHello();
+    }
+}
+```
