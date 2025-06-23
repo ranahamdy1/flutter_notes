@@ -11,6 +11,12 @@
 
 ![clean_arch](assets/images/flutter_clean_architecture.png)
 
+---
+
+![clean_arch](assets/images/cleancode3.png)
+
+---
+
 ## 🪐 Bloc-Cubit
 ![bloc-cubit](assets/images/cubit_bloc.jpg)
 
