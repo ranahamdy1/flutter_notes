@@ -152,3 +152,44 @@ result.fold(
 );
 }
 ```
+> ## 📌equatable package
+- هي مكتبة تُستخدم لتسهيل المقارنة بين الكائنات (objects)، بدون الحاجة لكتابة == و hashCode يدويًا.
+- في Dart، إذا عندك class مثل:
+```
+class Person {
+  final String name;
+  final int age;
+
+  Person(this.name, this.age);
+}
+void main(){
+final p1 = Person("Ali", 25);
+final p2 = Person("Ali", 25);
+
+print(p1 == p2); // false!
+}
+```
+- ده بيرجع false لأن Dart بتقارن بين المراجع (reference) مش بين القيم.
+- 👇 مثال باستخدام equatable:
+```
+import 'package:equatable/equatable.dart';
+
+class Person extends Equatable {
+  final String name;
+  final int age;
+
+  const Person(this.name, this.age);
+
+  @override
+  List<Object?> get props => [name, age];
+}
+
+void main(){
+final p1 = Person("Ali", 25);
+final p2 = Person("Ali", 25);
+
+print(p1 == p2); // true ✅
+}
+```
+- ✨ ليه بنستخدمها في Bloc كتير؟ لو عندك Cubit أو Bloc، والموديل اللي بتمثله الحالة State فيه قيم، لازم يكون قابل للمقارنة علشان Bloc يعرف إذا الحالة تغيرت أو لأ.
+
