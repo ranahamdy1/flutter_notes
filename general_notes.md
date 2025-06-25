@@ -121,3 +121,34 @@ void main() {
 }
 
 ```
+> ## 📌dartz package
+- تُستخدم لتمثيل النتيجة التي يمكن أن تكون نجاحًا (Right) أو فشلًا (Left).
+- تُستخدم بشكل كبير في المشاريع التي تتبع نمط الـ clean architecture أو التي تحتاج للتعامل مع الأخطاء بشكل آمن بدون استخدام try-catch.
+- بديل آمن لاستخدام الاستثناءات (exceptions).
+```dart
+class LoginFailure {
+  final String message;
+  LoginFailure(this.message);
+}
+
+class User {
+  final String name;
+  User(this.name);
+}
+
+Future<Either<LoginFailure, User>> login(String username, String password) async {
+  if (username == 'admin' && password == '123') {
+    return Right(User('Admin'));
+  } else {
+    return Left(LoginFailure('Wrong credentials'));
+  }
+}
+
+void main(){
+final result = await login("admin", "wrong");
+result.fold(
+  (failure) => print('Login Failed: ${failure.message}'),
+  (user) => print('Welcome ${user.name}'),
+);
+}
+```
