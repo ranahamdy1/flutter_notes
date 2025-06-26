@@ -197,3 +197,29 @@ print(p1 == p2); // true ✅
 - 2- Bloc Builder : بتظهر التغيير ال حصل في ال ui
 - 3- Bloc Listener : بيسمع وينفذ حسب ال سمعه
 - 4- Bloc Consumer : ( Bloc Builder + Bloc Listener)
+
+> ## 📌getit package
+- هي Service Locator في Flutter — يعني طريقة لتسجيل واسترجاع الكائنات (classes) في أي مكان من التطبيق بدون الحاجة لتمريرها يدويًا (dependency injection manual passing).
+- بدل ما تعمل كدا:
+```
+final api = ApiService();
+final repo = Repository(api);
+final cubit = MyCubit(repo);
+```
+- تسجل كل class مرة واحدة في GetIt، وبعدين تقدر تستدعيه في أي مكان كدا 👇:
+```
+final cubit = sl<MyCubit>();
+```
+- أنواع التسجيل:
+```dart
+1- Lazy Singleton: ينشئ الكائن مرة واحدة عند أول استدعاء فقط.
+sl.registerLazySingleton(() => ApiService());
+```
+```dart
+2- Singleton: ينشئ الكائن فورًا وقت التسجيل.
+sl.registerSingleton(ApiService());
+```
+```dart
+3- Factory: ينشئ كائن جديد كل مرة.
+sl.registerFactory(() => MyCubit(sl()));
+```
