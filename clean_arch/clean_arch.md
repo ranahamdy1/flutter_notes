@@ -5,6 +5,8 @@
 (models - data_source - repository)
 ### 3-presentation
 (controller - screens)
+
+---
 > start with domain layer
 - 1- first entities >> only data that i need بعمل فيها ال انا بستخدمه بس من الريسبونس
 - 2- second repository >> (فيها اكتر من داله) بعمل فيها الداله ال انا عايزه انفذها
@@ -16,3 +18,9 @@
 > then presentation layer
 - 1- controller(cubit)
 - 2- screens
+--- 
+
+- الـ Domain Layer مستقلة تمامًا عن أي حاجة تخص API أو Dio أو JSON.
+- لو بعدين غيرت طريقة جلب البيانات (من API إلى Local مثلاً)، مش هتعدل ولا سطر في usecases.
+- هنا في ال clean code arch لما تستخدم LoginUser في Cubit، أنت كده بتشغل منطق العمل فقط بدون ما تعرف مين بينفذه أو إزاي.
+
