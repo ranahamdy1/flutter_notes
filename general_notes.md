@@ -226,3 +226,15 @@ sl.registerSingleton(ApiService());
 3- Factory: ينشئ كائن جديد كل مرة.
 sl.registerFactory(() => MyCubit(sl()));
 ```
+> ## 📌When forking a package and modifying it for personal use in the project:
+- EX:
+```
+  urwaypayment:
+    git:
+      url: https://github.com/ranahamdy1/Flutter_Plugin
+      ref: master
+```
+- put it in pubspec.yaml
+- urwaypayment ← اسم المكتبة اللي هتستخدمه داخل الكود.
+- url ← رابط الـ GitHub repo اللي فيه نسخة الباكدج اللي عدلت عليها.
+- ref ← اسم الفرع اللي فيه التعديلات (ممكن يكون main, master, أو أي فرع تاني).
